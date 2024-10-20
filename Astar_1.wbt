@@ -1,0 +1,138 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "../protos/Supervisor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.3549715207849915 0.29320976998149717 0.8877067366078664 1.8762061304588835
+  position 0.5903073061870383 -1.8518647677656563 1.544389250115595
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Supervisor {
+  controller "supervisor_controller"
+}
+Solid {
+  translation 0.248706 -0.226143 0.05
+  children [
+    Solid {
+    }
+    Shape {
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.15 0.15 0.15
+  }
+}
+Solid {
+  translation 0.0212131 0.184215 0.05
+  children [
+    Solid {
+    }
+    Shape {
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.15 0.15 0.15
+  }
+}
+Solid {
+  translation -0.295151 -0.22438 0.05
+  children [
+    Solid {
+    }
+    Shape {
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.15 0.15 0.15
+  }
+}
+Solid {
+  translation -0.0137899 -0.243867 0.05
+  children [
+    Solid {
+    }
+    Shape {
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.15 0.15 0.15
+  }
+}
+Solid {
+  translation -0.250339 0.187344 0.05
+  children [
+    Solid {
+    }
+    Shape {
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.15 0.15 0.15
+  }
+}
+Solid {
+  translation 0.297056 0.150572 0.05
+  children [
+    Solid {
+    }
+    Shape {
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject Box {
+    size 0.15 0.15 0.15
+  }
+}
+E-puck {
+  hidden position_0_0 223.53904450708794
+  hidden position_0_1 223.53904442046536
+  hidden linearVelocity_0 -9.439232921219325e-10 0.008311635878509215 -1.5661069123022268e-09
+  hidden angularVelocity_0 -6.841221609629917e-09 1.0490252737880884e-07 -1.5332163126282425e-05
+  hidden rotation_1 0 1 0 4.176753587946662
+  hidden linearVelocity_1 3.8945476241649187e-07 0.008311719036245255 -1.1482725188604252e-09
+  hidden angularVelocity_1 -0.41558725482106423 1.956345314774229 -0.00022574448199845368
+  hidden rotation_2 0 1 0 4.850516051617993
+  hidden linearVelocity_2 -3.904086650776059e-07 0.008311553404258286 -1.91835253715368e-09
+  hidden angularVelocity_2 -0.41558738964867553 1.9563452847638416 -0.0002257747171500306
+  translation 0.46322685071808556 0.11216632489523155 -4.1293875208139874e-05
+  rotation 0.001553906432671626 -0.01960898593628304 0.9998065178049947 0.20935901829566608
+  controller "e_puck_controller_1"
+}
+Shape {
+  geometry Plane {
+  }
+}

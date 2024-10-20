@@ -1,0 +1,163 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "../protos/Supervisor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.551436023771613 0.5703684360929513 0.6087677379722369 2.017698964253873
+  position 0.15617598683938144 -0.2462859857587837 1.9963411039778591
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 0.25 0.25
+}
+DEF Obstacle_1 Solid {
+  translation -0.203065 0.229661 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+Supervisor {
+  controller "DRL_supervisor_obstacle_controller"
+}
+DEF EPUCK E-puck {
+  hidden position_0_0 6747.493783684021
+  hidden position_0_1 9983.470564840163
+  hidden linearVelocity_0 5.516369274797632e-10 -1.3147063289882985e-10 9.8562585056546e-10
+  hidden angularVelocity_0 -2.2241023348432788e-08 -5.671208981852077e-08 -4.2319966946630575e-08
+  hidden rotation_1 0 -1 0 0.6472362268550211
+  hidden linearVelocity_1 1.3220815074883705e-09 -3.328441263037563e-10 8.35357012983218e-10
+  hidden angularVelocity_1 1.145513119369364 3.832464413901246 -0.0037631277836180513
+  hidden rotation_2 0 1 0 5.772297038979881
+  hidden linearVelocity_2 -7.8501161846567e-10 2.9424782976487825e-10 1.0936348755451757e-09
+  hidden angularVelocity_2 1.1455128442345908 3.8324644965341377 -0.0037630690754572415
+  translation 0.4632370073135397 -0.46318333117753097 -3.445271704161437e-05
+  rotation -0.005675626461131994 -0.0163489398784685 -0.9998502385003086 0.2904853494241802
+  controller "drl_obstacle_controller"
+}
+DEF Goal_State Pose {
+}
+DEF Goal_State_Box Solid {
+  translation 0.435762 -0.438049 1.31006e-14
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "goal.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+}
+DEF Start_Label Pose {
+}
+DEF Start_State_Box Solid {
+  translation -0.446409 0.430567 6.66134e-16
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "start.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+DEF Obstacle_5 Solid {
+  translation 0.0373242 -0.00410947 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF Obstacle_4 Solid {
+  translation 0.265489 -0.177663 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF Obstacle_3 Solid {
+  translation 0.255463 0.235513 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF Obstacle_2 Solid {
+  translation -0.184113 -0.162953 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
