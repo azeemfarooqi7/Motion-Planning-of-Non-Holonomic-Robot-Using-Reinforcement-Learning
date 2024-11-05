@@ -1,0 +1,163 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "../protos/Supervisor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6048904171210734 0.5892166683530305 0.5356596876843065 2.179758792921401
+  position 0.14119311420414812 0.43691784227117214 3.1062445757233434
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 0.25 0.25
+}
+DEF Obstacle_1 Solid {
+  translation -0.203065 0.229661 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+Supervisor {
+  controller "<none>"
+}
+DEF EPUCK E-puck {
+  hidden position_0_0 6958.223141835198
+  hidden position_0_1 10159.169062126806
+  hidden linearVelocity_0 7.820773925387829e-05 -7.997492125865898e-05 8.551428684543252e-08
+  hidden angularVelocity_0 -0.0008833301131414833 0.005161552573510474 -1.323481109875559
+  hidden rotation_1 0 -1 0 3.54617851978425
+  hidden linearVelocity_1 0.03424100785444503 0.005266396799369738 -3.7973752929809305e-09
+  hidden angularVelocity_1 -0.29063173542364595 1.8671067987445413 -1.3345466190909077
+  hidden rotation_2 0 1 0 5.541605724594492
+  hidden linearVelocity_2 -0.0340341893624577 -0.005415451518412736 -4.971821274336743e-09
+  hidden angularVelocity_2 0.28886138122545335 -1.8567844703167258 -1.3344999017455672
+  translation -0.09717717225898326 0.11089581788405536 -7.741251164082585e-05
+  rotation 5.840899011524639e-05 0.00010286808588682068 -0.9999999930032732 -0.13144958316129696
+  controller "drl_pybullet_controller"
+}
+DEF Goal_State Pose {
+}
+DEF Goal_State_Box Solid {
+  translation 0.440155 -0.436161 0.01
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "goal.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+}
+DEF Start_Label Pose {
+}
+DEF Start_State_Box Solid {
+  translation -0.446409 0.430567 6.66134e-16
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "start.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+DEF Obstacle_5 Solid {
+  translation 0.0373242 -0.00410947 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF Obstacle_4 Solid {
+  translation 0.265489 -0.177663 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF Obstacle_3 Solid {
+  translation 0.267329 0.223027 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF Obstacle_2 Solid {
+  translation -0.184113 -0.162953 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.09
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
